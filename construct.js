@@ -22,7 +22,7 @@
 				} else {
 					child = parent;
 				};
-				if (this.children) {
+				if ($.type(this.children) !== "undefined") {
 					$.construct(this, child);
 				};
 			});
