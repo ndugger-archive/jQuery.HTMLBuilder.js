@@ -3,7 +3,7 @@ jQuery Construct | HTML Constructor
 
 Usage Example:
 
-	var myHTML = {
+	var constructed = $.construct({
 		tag: "section",
 		children: [
 			{
@@ -34,9 +34,9 @@ Usage Example:
 				]
 			}
 		]
-	};
+	});
 	
-	var constructedHTML = $.construct(myHTML);
+	$(body).append(constructed);
 	
 You can then append `constructedHTML` to your document. You can give an element properties that match jQuery methods. The script looks for these, and calls them, accordingly (i.e. addClass, text, attr, html, etc)
 
