@@ -24,12 +24,8 @@ Usage Example:
 				children: [
 					{
 						tag: "option",
-						prop: {
-							text: "Categories"
-						},
-						attr: {
-							value: 0
-						}
+						text: "Categories",
+						val: 0
 					}
 				]
 			}
