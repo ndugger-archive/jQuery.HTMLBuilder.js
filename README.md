@@ -3,22 +3,38 @@ HTML-Constructor - jQuery-Version
 
 Usage Example:
 
-	var myHTML = [
-		{
-			tag:  "section",
-			text: "Parent Container",
-			addClass: "parent-container",
-			children: [
-				{
-					tag: "input",
-					attr: {
-						type: "number",
-						placeholder: "Phone 1"
+	var myHTML = {
+		tag: "section",
+		children: [
+			{
+				tag: "h3",
+				addClass: "title",
+				text: "What section can we find your ad?",
+				on: {
+					click: function() {
+						alert("You clicked me!");
 					}
 				}
-			]
-		}
-	]
+			},
+			{
+				tag: "select",
+				attr: {
+					id: "category"
+				},
+				children: [
+					{
+						tag: "option",
+						prop: {
+							text: "Categories"
+						},
+						attr: {
+							value: 0
+						}
+					}
+				]
+			}
+		]
+	};
 	
 	var constructedHTML = $.construct(myHTML);
 	
