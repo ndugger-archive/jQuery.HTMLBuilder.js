@@ -12,7 +12,7 @@
 				if ($.type(this.tag) === "string") {
 					child = $("<" + this.tag + ">");
 					$.each(this, function(key, value) {
-						if (child[key] && key !== "children") {
+						if ($.type(child[key]) !== "undefined" && key !== "children") {
 							child[key](value);
 						};
 					});
