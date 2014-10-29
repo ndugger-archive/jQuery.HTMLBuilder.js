@@ -1,5 +1,5 @@
-HTML Constructor - jQuery Version
-=================================
+jQuery Construct | HTML Constructor from JS Objects
+===================================================
 
 Usage Example:
 
