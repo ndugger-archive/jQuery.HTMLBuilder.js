@@ -3,8 +3,6 @@
 		if ($.isPlainObject(children) || $.isArray(children)) {
 			if ($.type(parent) === "undefined") {
 				parent = $("<div>");
-			} else {
-				children = children.children
 			};
 			if ($.isPlainObject(children)) {
 				children = [children]
@@ -23,7 +21,7 @@
 					child = parent;
 				};
 				if ($.type(this.children) !== "undefined") {
-					$.construct(this, child);
+					$.construct(this.children, child);
 				};
 			});
 			return parent.children();
