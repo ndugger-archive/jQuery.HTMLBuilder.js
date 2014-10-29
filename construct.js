@@ -1,17 +1,17 @@
 (function($) {
 	$.construct = function(children, parent) {
-		if (typeof children === "object") {
-			if (!parent) {
+		if ($.isPlainObject(children) || $.isArray(children)) {
+			if ($.type(parent) === "undefined") {
 				parent = $("<div>");
 			} else {
 				children = children.children
 			};
-			if (!$.isArray(children)) {
+			if ($.isPlainObject(children)) {
 				children = [children]
 			};
 			$.each(children, function() {
 				var child;
-				if (this.tag) {
+				if ($.type(this.tag) === "string") {
 					child = $("<" + this.tag + ">");
 					$.each(this, function(key, value) {
 						if (child[key] && key !== "children") {
@@ -28,7 +28,7 @@
 			});
 			return parent.children();
 		} else {
-			console.error(typeof children + ": " + children + " is an invalid argument.");
+			console.error($.type(children) + ": " + children + " is an invalid argument.");
 		};
 	};
 })(jQuery);
