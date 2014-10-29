@@ -1,5 +1,5 @@
-jQuery Construct | HTML Constructor from JS Objects
-===================================================
+jQuery Construct | HTML Constructor
+===================================
 
 Usage Example:
 
