@@ -12,7 +12,7 @@
 			$.each(children, function() {
 				var child;
 				if (this.tag) {
-					child = $("<" + (this.tag) + ">");
+					child = $("<" + this.tag + ">");
 					$.each(this, function(key, value) {
 						if (child[key] && key !== "children") {
 							child[key](value);
