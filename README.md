@@ -38,7 +38,7 @@ Usage Example:
 	
 	$(body).append(constructed);
 	
-You can then append `constructedHTML` to your document. You can give an element properties that match jQuery methods. The script looks for these, and calls them, accordingly (i.e. addClass, text, attr, html, etc)
+You can give an element properties that match jQuery methods. The script looks for these, and calls them, accordingly (i.e. addClass, text, attr, html, etc)
 
 **TODO:**
 - ~~what if user passes invalid arg? string, etc~~ logs an error.
