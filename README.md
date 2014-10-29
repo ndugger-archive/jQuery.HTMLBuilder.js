@@ -1,4 +1,4 @@
-HTML-Constructor - jQuery-Version
+HTML Constructor - jQuery Version
 =================================
 
 Usage Example:
@@ -41,7 +41,7 @@ Usage Example:
 You can then append `constructedHTML` to your document. You can give an element properties that match jQuery methods. The script looks for these, and calls them, accordingly (i.e. addClass, text, attr, html, etc)
 
 **TODO:**
-- ~~what if user passes invalid arg? string, etc~~
-- what if object does not have a tag property? *currently defaults to div*
-- ~~check for array vs object to pass into method~~
-- what if tag is invalid html?
+- ~~what if user passes invalid arg? string, etc~~ logs an error.
+- ~~what if object does not have a tag property?~~ skips over it.
+- ~~check for array vs object to pass into method~~ done.
+- what if tag is invalid html? *should I bother?*
