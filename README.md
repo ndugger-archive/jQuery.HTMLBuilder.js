@@ -9,7 +9,7 @@ Usage Example:
 			{
 				tag: "h3",
 				addClass: "title",
-				text: "What section can we find your ad?",
+				text: "Lorem ipsum dolor sit amet...",
 				on: {
 					click: function() {
 						alert("You clicked me!");
