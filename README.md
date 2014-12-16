@@ -1,9 +1,9 @@
-jQuery Construct | HTML Constructor
-===================================
+$.HTMLBuilder
+=============
 
 Usage Example:
 
-	var constructed = $.construct({
+	var myHTML = $.HTMLBuilder({
 		tag: "section",
 		children: [
 			{
@@ -32,7 +32,7 @@ Usage Example:
 		]
 	});
 	
-	$(body).append(constructed);
+	$(body).append(myHTML);
 	
 You can give an element properties that match jQuery methods. The script looks for these, and calls them, accordingly (i.e. addClass, text, attr, html, etc)
 
