@@ -1,5 +1,5 @@
 (function($) {
-	$.construct = function(children, parent) {
+	$.HTMLBuilder = function(children, parent) {
 		if ($.isPlainObject(children) || $.isArray(children)) {
 			if ($.type(parent) === "undefined") {
 				parent = $("<div>");
@@ -21,7 +21,7 @@
 					child = parent;
 				};
 				if ($.type(this.children) !== "undefined") {
-					$.construct(this.children, child);
+					$.HTMLBuilder(this.children, child);
 				};
 			});
 			return parent.children();
