@@ -1,6 +1,8 @@
 $.HTMLBuilder
 =============
-(Released under MIT License) **Usage Example:**
+(Released under MIT License)
+
+**Usage Example:**
 
 	var myHTML = $.HTMLBuilder({
 		tag: "section",
